@@ -28,7 +28,7 @@ const FirstSight = ({post}) => {
         </div>
 
         <div className={styles.containerImagen}>
-					<Image className={styles.rounded} width={400} height={400} src={imagen}/>
+					<Image className={styles.rounded} width={350} height={350} src={imagen}/>
 				</div> 
 			</section>
 		</>

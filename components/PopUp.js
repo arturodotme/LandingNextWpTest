@@ -29,7 +29,10 @@ const PopUp = ({post}) => {
         onChange={e => setEmail(e.target.value)} required/>
         <input type="submit" className={styles.boton} value="Get My Cupon"></input>
     </form>
-    <p className={styles.privacy}>Privacy Policy: We hate spam and promise to keep your email address safe</p>
+    <div className={styles.privacy}>
+    <p >Privacy Policy: We hate spam and promise to keep your email address safe</p>
+    </div>
+    
     </div>
     </>
   )
