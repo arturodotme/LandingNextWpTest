@@ -1,0 +1,52 @@
+.container{
+    background-color: var(--amarilo );
+    text-align: center;
+}
+.text{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    padding: 2rem;
+}
+.buttonoff{
+    background-color: white;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    padding: 3rem;
+    font-size: 3rem;
+}
+@media (min-width: 768px) {
+    .container{
+        display: flex;
+        align-items: baseline;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .text{
+        text-align: left;
+        flex-basis: 50%;
+        max-width: 50%;
+        padding:4rem;
+    }
+    .buttonoff{
+        margin-top: 10rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+.buttonoff:hover{
+    background-color: var(--gris3);
+    cursor: pointer;
+}
+.copy{
+    text-align: center;
+}

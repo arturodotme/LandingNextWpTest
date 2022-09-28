@@ -1,0 +1,59 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.closeButton{
+    display: flex;
+    justify-content: flex-end;
+}
+.closeButton button{
+    background-color: Transparent;
+background-repeat:no-repeat;
+border: none;
+}
+
+.closeButton button:hover{
+    cursor: pointer;
+}
+.title{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 2rem;
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+.formCupon{
+    display: flex;
+    flex-direction: column;
+}
+.email{
+    color: var(--gris)
+}
+
+.boton{
+    background-color: var(--amarilo);
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+.boton:hover{
+    background-color: rgb(199,153,41);
+    cursor: pointer;
+}
+
+.privacy{
+font-size: smaller;
+color: var(--gris2);
+}

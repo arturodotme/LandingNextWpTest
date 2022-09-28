@@ -3,5 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
 }
+module.exports = {
+  images: {
+      domains: ['www.testingnextjs.paginaswebculiacan.net'],
+  },
+}
 
-module.exports = nextConfig

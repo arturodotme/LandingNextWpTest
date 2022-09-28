@@ -1,0 +1,34 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    max-width: 1500px;
+    margin: 3rem;
+}
+.containerreviews{
+    display: block;
+}
+@media (min-width: 768px) {
+    .containerreviews{
+        display: flex;
+        padding-left: 5rem;
+        padding-right: 30rem;
+        align-items: baseline;
+        gap: 5rem;
+    } 
+    .reviewtitle{
+        margin-left: 5rem;
+    }
+}
+
+
+.review{
+    font-family: 'Roboto Slab';
+    font-size: 2rem;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 2rem;
+}
+.review p:last-of-type{
+    font-weight: bold;
+}

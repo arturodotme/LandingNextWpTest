@@ -1,39 +1,26 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Layout from "../components/Layout";
-import FirstSight from "../components/FirstSight";
-import Expires from "../components/Expires";
-import Reviews from "../components/Reviews";
-import Footer from "../components/Footer";
+import React from 'react'
+import { createContext, useState } from "react";
 import { client } from "../lib/apollo";
 import { gql } from "@apollo/client";
 
-export default function Home({ post }) {
-	const postWp = post.landing1
-	
-	return (
-		<Layout
-		post = {postWp}
-		>
-			<Head>
-				<title>Headless WP Next Starter</title>
-				<link rel="icon" href="favicon.ico"></link>
-			</Head>
-			<main>
-				<div className={styles.container}>
-					<FirstSight
-					post = {postWp} />
-					<Expires
-					post = {postWp} />
-					<Reviews
-					post = {postWp} />
-					<Footer
-					post = {postWp} />
-				</div>
-			</main>
-		</Layout>
-	);
+const WordpressContext = createContext()
+
+const WordpressProvider = ({post,children}) => {
+    return (
+        <WordpressContext.Provider 
+        value={{
+          post
+        }}
+        >
+            {children}
+        </WordpressContext.Provider>
+    )
 }
+export {
+    WordpressProvider
+};
+export default WordpressContext
+
 export async function getStaticProps(params) {
 	const GET_POST = gql`
 		query GetPostByURI($id: ID = "2022/09/22/hola-mundo/") {
