@@ -12,7 +12,6 @@
 .closeButton button {
 	background-color: Transparent;
 	background-repeat: no-repeat;
-    margin-right: 1.8rem;
 	border: none;
 }
 
@@ -24,17 +23,21 @@
 	font-weight: bold;
 	color: black;
 	padding: 2rem;
-	width: 500px;
+	width: 350px;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	word-break: break-word;
 }
+
 .formCupon {
 	display: flex;
 	flex-direction: column;
 }
 .email {
 	color: var(--gris);
+	padding: 1rem;
+	border-radius: 1rem;
+	width: 350px;
 }
 
 .boton {
@@ -44,7 +47,7 @@
 	border: none;
 	font-weight: bold;
 	margin-top: 2rem;
-	padding: 2rem;
+	padding: 1rem;
 	border-radius: 0.5rem;
 	transition: background-color 0.3s;
 }
@@ -53,9 +56,21 @@
 	cursor: pointer;
 }
 .privacy {
-	width: 400px;
-}
-.privacy p {
 	font-size: smaller;
+	width: 350px;
 	color: var(--gris2);
+}
+@media (min-width: 768px) {
+	.title{
+		width: 600px;
+	}
+	.privacy{
+		width: auto;
+	}
+	.email{
+		padding: 2rem;
+	}
+	.boton{
+		padding: 2rem;
+	}
 }
